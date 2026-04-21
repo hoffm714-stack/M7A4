@@ -1,9 +1,11 @@
 # CREATING THE APP
+import matplotlib
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
 import numpy as np
+from streamlit.delta_generator import DeltaGenerator
 
 st.title("Hello, Streamlit!")
 st.write("Welcome to your first Streamlit app.")
