@@ -1,10 +1,10 @@
 # CREATING THE APP
+import matplotlib
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
 import numpy as np
-from streamlit.delta_generator import DeltaGenerator
 
 st.title("Hello, Streamlit!")
 st.write("Welcome to your first Streamlit app.")
@@ -83,7 +83,6 @@ ax.set_title("Distribution of Series A")
 ax.set_xlabel("Value")
 ax.set_ylabel("Frequency")
 st.pyplot(fig)
-DeltaGenerator()
 
 # LAYOUT
 # Sidebar
