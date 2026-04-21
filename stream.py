@@ -1,7 +1,7 @@
 # CREATING THE APP
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+from matplotlib.pyplot import subplots
 import time
 import numpy as np
 
@@ -76,7 +76,7 @@ st.area_chart(data)
 
 # Matplotlib
 st.subheader("Matplotlib Figure")
-fig, ax = plt.subplots()
+fig, ax = subplots()
 ax.hist(data["Series A"], bins=15, color="steelblue", edgecolor="white")
 ax.set_title("Distribution of Series A")
 ax.set_xlabel("Value")
@@ -151,7 +151,6 @@ st.success("Data loaded!")
 st.line_chart(df.set_index("x"))
 
 # UPLOAD AND DOWNLOAD
-#%%
 st.title("File Upload & Download")
 
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
