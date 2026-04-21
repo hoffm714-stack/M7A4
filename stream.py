@@ -1,7 +1,7 @@
 # CREATING THE APP
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib.pyplot
 import time
 import numpy as np
 
@@ -76,7 +76,7 @@ st.area_chart(data)
 
 # Matplotlib
 st.subheader("Matplotlib Figure")
-fig, ax = plt.subplots()
+fig, ax = matplotlib.pyplot.subplots()
 ax.hist(data["Series A"], bins=15, color="steelblue", edgecolor="white")
 ax.set_title("Distribution of Series A")
 ax.set_xlabel("Value")
