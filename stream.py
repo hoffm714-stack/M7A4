@@ -1,7 +1,5 @@
 # CREATING THE APP
-import pandas
 import matplotlib
-import numpy
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -80,7 +78,7 @@ st.area_chart(data)
 
 # Matplotlib
 st.subheader("Matplotlib Figure")
-fig, ax = matplotlib.pyplot.subplots()
+fig, ax = plt.subplots()
 ax.hist(data["Series A"], bins=15, color="steelblue", edgecolor="white")
 ax.set_title("Distribution of Series A")
 ax.set_xlabel("Value")
@@ -178,7 +176,6 @@ else:
     st.info("Please upload a CSV file to get started.")
 
 # FINISHING TOUCHES
-#%%
 st.set_page_config(page_title="Sales Dashboard", layout="wide")
 
 # Sidebar controls
