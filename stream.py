@@ -1,5 +1,7 @@
 # CREATING THE APP
+import pandas
 import matplotlib
+import numpy
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
