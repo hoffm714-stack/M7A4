@@ -1,7 +1,6 @@
 # CREATING THE APP
 import streamlit as st
 import pandas as pd
-import matplotlib
 from matplotlib.pyplot import subplots
 import time
 import numpy as np
