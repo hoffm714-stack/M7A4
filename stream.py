@@ -5,6 +5,8 @@ from matplotlib.pyplot import subplots
 import time
 import numpy as np
 
+st.set_page_config(page_title="Sales Dashboard", layout="wide")
+
 st.title("Hello, Streamlit!")
 st.write("Welcome to your first Streamlit app.")
 
@@ -172,7 +174,7 @@ else:
     st.info("Please upload a CSV file to get started.")
 
 # FINISHING TOUCHES
-st.set_page_config(page_title="Sales Dashboard", layout="wide")
+
 
 # Sidebar controls
 st.sidebar.title("Sales Dashboard")
